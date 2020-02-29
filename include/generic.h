@@ -6,9 +6,6 @@
 #define SET_REG(x, val) (*x = val)
 #define GET_REG(x) (*x)
 
-inline void __delay(int delay)
-{
-    while(--delay) __asm("nop");
-}
+#define __delay(delay) for(int i=0; i < delay; ++i) __asm("nop");
 
 #endif
