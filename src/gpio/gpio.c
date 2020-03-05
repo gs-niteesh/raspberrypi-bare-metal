@@ -1,5 +1,5 @@
 #include <gpio/gpio.h>
-#include <generic.h>
+#include <util/util.h>
 
 void gpio_set_pin_mode(uint8_t pin, PINMODE mode)
 {
