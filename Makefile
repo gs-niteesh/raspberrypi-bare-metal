@@ -1,9 +1,10 @@
-GCC = aarch64-elf-gcc
-LD = aarch64-elf-ld
-OBJCOPY = aarch64-elf-objcopy
-CFLAGS = -std=c11 -g -Wall -ffreestanding -nostdlib -nostdinc -nostartfiles
-LDFLAGS = -nostdlib -nostartfiles
-INCLUDES = -I/opt/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-elf/lib/gcc/aarch64-elf/7.2.1/include -Iinclude/
+GCC			= aarch64-elf-gcc
+LD			= aarch64-elf-ld
+OBJCOPY		= aarch64-elf-objcopy
+QEMU		= qemu-system-aarch64
+LDFLAGS		= -nostdlib -nostartfiles
+CFLAGS		= -std=c11 -g -Wall -Wpedantic -Werror -ffreestanding -nostdinc -nostartfiles
+INCLUDES	= -I/opt/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-elf/lib/gcc/aarch64-elf/7.2.1/include -Iinclude/
 
 gpio:
 	mkdir -p build
