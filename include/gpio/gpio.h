@@ -7,14 +7,14 @@
  * Data structures to capture pin characteristics.
  */
 typedef enum{
-    INPUT   = 0b000,
-    OUTPUT  = 0b001,
-    ALTFUN0 = 0b100,
-    ALTFUN1 = 0b101,
-    ALTFUN2 = 0b110,
-    ALTFUN3 = 0b111,
-    ALTFUN4 = 0b011,
-    ALTFUN5 = 0b010,
+    INPUT   = 0x0,
+    OUTPUT  = 0x1,
+    ALTFUN0 = 0x4,
+    ALTFUN1 = 0x5,
+    ALTFUN2 = 0x6,
+    ALTFUN3 = 0x7,
+    ALTFUN4 = 0x3,
+    ALTFUN5 = 0x2,
 }PINMODE;
 
 typedef enum{
